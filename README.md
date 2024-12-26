@@ -2,7 +2,7 @@ This is the simplest program I could come up with to display an animated GIF on 
 
 This little board has a Raspberry Pi processor and a lovely little round screen, but man it was a pain in the ass to just get it to display an animated GIF. So I share it here to save you the hassle. 
 
-Here is what theoutput looks like like (looks way better in person)...
+Here is what the output looks like like (looks way better in person)...
 
 ![demo-video](https://github.com/user-attachments/assets/7c49d435-9519-40cc-b937-ecdecb8ef737)
 
@@ -24,7 +24,7 @@ You should now see a little fish animation on the little round screen.
 
 # To make it show your animation
 
-Replace `fish.gif` with your own animated GIF and run the `gif2rgb565.py` python program. Note that the GIF must have the resolution of 240x240 to match the size of th little screen. 
+Replace `fish.gif` with your own animated GIF and run the `gif2rgb565.py` python program, then go to Arduino and recompile and download the firmware. Note that the GIF must have the resolution of 240x240 to match the size of th little screen. 
 
 # Auto turn on/off
 
