@@ -26,6 +26,17 @@ You should now see a little fish animation on the little round screen.
 
 Replace `fish.gif` with your own animated GIF and run the `gif2rgb565.py` python program, then go to Arduino and recompile and download the firmware. Note that the GIF must have the resolution of 240x240 to match the size of th little screen. 
 
+# Make it work with the `Touch` version
+
+This board also comes in [a version with a touch screen](https://www.waveshare.com/rp2040-touch-lcd-1.28.htm), and apparently they moved the reset pin in that version!
+
+To fix this, you need to edit [line 22 in `User_setup.h`](https://github.com/bigjosh/RP2040-LCD-1.28-animated-GIF-displayer/blob/0fcc8632ac15a984be6b75918cea968ed98a88ab/User_Setup.h#L22) to this...
+
+```
+#define TFT_RST 12
+```
+(thanks, [Poing3000](https://github.com/Poing3000)!)
+
 # Auto turn on/off
 
 I was hoping to make this automatically turn on and off based on the built-in accelerometer, but it turns out this little board uses >180uA even durring the deepest sleep with the screen turned off so that 
