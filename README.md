@@ -47,7 +47,7 @@ That manual file copy bugs me, and the file gets overwritten any time you update
 
 It turns out that the reede switches I had (from amazon) are crappy and the board apprently pulls more current than I thought so the reede switch gets stuck on after you turn it on with the magnet. To turn it off, you have to tap the unit to get the switch to open again.
 
-KNowing this, if I was going to do it over again then I would use a N MOSFET in line with the `-` power wire and have the gate tied to ground with ~50K ohms, a reede switch or button to `+`, and also connected to a GPIO pin. The switch or button would
+Knowing this, if I was going to do it over again then I would use a N MOSFET in line with the `-` power wire and have the gate tied to ground with ~50K ohms, a reede switch or button to `+`, and also connected to a GPIO pin. The switch or button would
 momentarrily turn on the MOSFET which would power up the board which would immedeately set the GPIO to high to keep the board powered up even after the swich turned off again. You could then implement a timer in software to turn the MOSFET off again after a fixed ammount of time 
 or after some time period of being no motion. 
 
