@@ -33,7 +33,7 @@ This board also comes in [a version with a touch screen](https://www.waveshare.c
 To fix this, you need to edit [line 22 in `User_setup.h`](https://github.com/bigjosh/RP2040-LCD-1.28-animated-GIF-displayer/blob/0fcc8632ac15a984be6b75918cea968ed98a88ab/User_Setup.h#L22) to this...
 
 ```
-#define TFT_RST 12
+#define TFT_RST 13
 ```
 (thanks, [Poing3000](https://github.com/Poing3000)!)
 
